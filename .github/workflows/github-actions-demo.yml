@@ -13,6 +13,7 @@ jobs:
   Builds:
     runs-on: latest-ubuntu
     steps:
+      - name: Init
       - run: | 
           echo "Job was triggered by event ${{github.event_name}}" 
           echo "Name of the branch is ${{github.ref}}"
