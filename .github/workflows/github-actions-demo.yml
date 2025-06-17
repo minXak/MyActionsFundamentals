@@ -14,11 +14,11 @@ jobs:
     runs-on: latest-ubuntu
     steps:
       - name: Init
-      - run: | 
+        run: | 
           echo "Job was triggered by event ${{github.event_name}}" 
           echo "Name of the branch is ${{github.ref}}"
       - uses: actions/checkout@v3.3.0
       - name: List files in repository
-      - run: | 
+        run: | 
           echo "The repository ${{ github.repository }} contains the following files:"
           tree  
